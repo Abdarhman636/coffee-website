@@ -1,0 +1,160 @@
+:root {
+     --body-color: #222028;
+     --main-color: #DEC4A2;
+     --second-color: #999999
+}
+
+*, *::before, *::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     background-color: var(--body-color);
+}
+
+ol, ul {
+	list-style: none;
+     padding: 0;
+     margin: 0;
+}
+
+button {
+     border: none;
+     background-color: var(--main-color);
+}
+
+a {
+     color: var(--main-color);
+}
+
+li {
+     display: inline;
+     margin-right: 7px;
+}
+
+i {
+     display: inline;
+}
+
+.mainColor {
+     color: var(--main-color);
+}
+
+.secondColor {
+     color: var(--second-color);
+}
+
+/* ------------------------------------------------------------ */
+
+.hero {
+     background-image: linear-gradient(#1c1b1f1a, #222028), url(assets/imgs/hero.jpg);
+     background-position: center;
+     background-size: cover;
+}
+
+.menu {
+     color: var(--main-color);
+     font-size: 18px;
+}
+
+.menu, .logo, .social {
+     flex: 1;
+}
+
+.logo img {
+     max-width: 100px;
+}
+
+.social-icons {
+     width: fit-content;
+     display: inline;
+}
+
+header {
+     height: 100px;
+     background-color: #232227a6;
+}
+
+.hero-content {
+     height: calc(100vh - 100px);
+}
+
+.social-icons i {
+     background-color: var(--main-color);
+     border-radius: 10px;
+}
+
+
+/* -----------------------------coffee Features------------------------------- */
+.features-boxs div:nth-child(1) {
+     border-right: 2px solid #999999;
+}
+
+.features-boxs div:nth-child(2) {
+     border-right: 2px solid #999999;
+}
+
+.box {
+     flex: 1;
+     min-width: 200px;
+}
+
+.box p {
+     color: var(--second-color);
+}
+
+/* -----------------------------About us------------------------------- */
+
+.about-img, .about-text {
+     flex: 1;
+}
+
+.about-img img {
+     width: 450px;
+}
+
+/* -----------------------------Our proeducts------------------------------- */
+
+.coffee-products div {
+     flex: 1;
+}
+
+.coffee-products img {
+     max-width: 300px;
+}
+
+/* -----------------------------form------------------------------- */
+
+.form {
+      background-color: var(--main-color);
+}
+
+.myInput {
+     border: none !important;
+     background-color: transparent;
+     border-bottom: 2px solid  #222028 !important;
+     border-radius: 0;
+     display: block;
+     width: 100%;
+     margin: 25px 0;
+     padding: 10px 0;
+}
+
+input[type=submit] {
+     background-color: var(--body-color);
+}
+
+input::placeholder, textarea::placeholder {
+     color: var(--body-color);
+}
+
+input:focus, textarea:focus{
+     outline: none;
+}
+@media only Screen and (max-width: 1000px) {
+     header {
+          height: 145px;
+     }
+}
